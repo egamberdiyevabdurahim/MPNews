@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if message.exists %}
+    <title>Success</title>
+    {% else %}
+    <title>UnSuccess</title>
+    {% endif %}
+</head>
+<body>
+
+{% if message.exists %}
+<center><h1>Subscribed Successfully</h1></center>
+{% else %}
+<center><h1>You Have Already Subscribe</h1></center>
+{% endif %}
+
+</body>
+</html>
